@@ -185,6 +185,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4433942057210488, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
   m_PrefabInstance: {fileID: 117437265}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &576590386 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1510364872509504, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
+  m_PrefabInstance: {fileID: 117437265}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &576590389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576590386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86a20f28bbc524343aa826445cc33b6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,11 +526,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3166644204586632930, guid: 972b4b7d4d0542c4faf5702b3f9f3e27, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 22
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3166644204586632930, guid: 972b4b7d4d0542c4faf5702b3f9f3e27, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 338
+      value: 326
       objectReference: {fileID: 0}
     - target: {fileID: 3166644204586632930, guid: 972b4b7d4d0542c4faf5702b3f9f3e27, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -548,7 +565,7 @@ TerrainCollider:
   m_GameObject: {fileID: 2084274530}
   m_Material: {fileID: 0}
   m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: 9334b8c009a9d5941a1dba5d00dbbdb1, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: 154cff3e6a53ea0458b9a07806b3d4c9, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &2084274532
 Terrain:
