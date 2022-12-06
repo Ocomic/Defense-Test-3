@@ -5,9 +5,13 @@ using UnityEngine.InputSystem;
 
 public class PlayerControler : MonoBehaviour
 {
-    [SerializeField] InputAction movement;
-    [SerializeField] InputAction fire;
-    // Start is called before the first frame update
+    //[SerializeField] InputAction movement;
+    //[SerializeField] InputAction fire;
+
+    [SerializeField] float controlSpeed = 0.2f;
+    [SerializeField] float xRange = 12f;
+    [SerializeField] float yRange = 10f;
+
     void Start()
     {
         
@@ -30,6 +34,16 @@ public class PlayerControler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ProcessTranslation();
+        ProcessRotation();
+
+    }
+    void ProcessRotation()
+    {
+        transform.localRotation = Quaternion.Euler(-30f, 30f, 0f);
+    }
+    void ProcessTranslation()
+    {
         //float horizontalThrow = movement.ReadValue<Vector2>().x;
         //Debug.Log(horizontalThrow);
         //float verticalThrow = movement.ReadValue<Vector2>().y;
@@ -41,9 +55,13 @@ public class PlayerControler : MonoBehaviour
         //Debug.Log(verticalThrow);
         float fire1ButtonPushed = Input.GetAxis("Fire1");
         //Debug.Log(fire1ButtonPushed);
-        float xOffset = 1f;
-        float newXPos = transform.localPosition.x + xOffset;
+        float xOffset = horizontalThrow * controlSpeed;
+        float yOffset = verticalThrow * controlSpeed;
+        float rawXPos = transform.localPosition.x + xOffset;
+        float clampedXPos = Mathf.Clamp(rawXPos, -xRange, xRange);
+        float rawYPos = transform.localPosition.y + yOffset;
+        float clampedYPos = Mathf.Clamp(rawYPos, -yRange, yRange);
 
-        transform.localPosition = new Vector3(newXPos, transform.localPosition.y, transform.localPosition.z);
+        transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
     }
 }
