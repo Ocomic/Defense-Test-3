@@ -8,13 +8,13 @@ public class PlayerControler : MonoBehaviour
     //[SerializeField] InputAction movement;
     //[SerializeField] InputAction fire;
 
-    [SerializeField] float controlSpeed = 0.1f;
+    [SerializeField] float controlSpeed = 0.2f;
     [SerializeField] float xRange = 12f;
     [SerializeField] float yRange = 10f;
-    [SerializeField] float positionPitchFactor = -2f;
+    [SerializeField] float positionPitchFactor = -1f;
     [SerializeField] float controlPitchFactor = -35f;
     [SerializeField] float positionYawFactor = -1f;
-    [SerializeField] float controlRollFactor = 30f;
+    [SerializeField] float controlRollFactor = -30f;
 
     float horizontalThrow;
     float verticalThrow;
