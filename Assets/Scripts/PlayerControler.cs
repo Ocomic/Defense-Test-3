@@ -8,9 +8,16 @@ public class PlayerControler : MonoBehaviour
     //[SerializeField] InputAction movement;
     //[SerializeField] InputAction fire;
 
-    [SerializeField] float controlSpeed = 0.2f;
+    [SerializeField] float controlSpeed = 0.1f;
     [SerializeField] float xRange = 12f;
     [SerializeField] float yRange = 10f;
+    [SerializeField] float positionPitchFactor = -2f;
+    [SerializeField] float controlPitchFactor = -35f;
+    [SerializeField] float positionYawFactor = -1f;
+    [SerializeField] float controlRollFactor = 30f;
+
+    float horizontalThrow;
+    float verticalThrow;
 
     void Start()
     {
@@ -40,7 +47,13 @@ public class PlayerControler : MonoBehaviour
     }
     void ProcessRotation()
     {
-        transform.localRotation = Quaternion.Euler(-30f, 30f, 0f);
+        float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
+        float pitchDueToControlThrow = verticalThrow * controlPitchFactor;
+
+        float pitchY = pitchDueToPosition + pitchDueToControlThrow;
+        float yawX = transform.localPosition.x * positionYawFactor;
+        float rollZ = horizontalThrow * controlRollFactor;
+        transform.localRotation = Quaternion.Euler(pitchY, yawX, rollZ);
     }
     void ProcessTranslation()
     {
@@ -49,16 +62,18 @@ public class PlayerControler : MonoBehaviour
         //float verticalThrow = movement.ReadValue<Vector2>().y;
         //Debug.Log(verticalThrow);
 
-        float horizontalThrow = Input.GetAxis("Horizontal");
+        horizontalThrow = Input.GetAxis("Horizontal");
         //Debug.Log(horizontalThrow);
-        float verticalThrow = Input.GetAxis("Vertical");
+        verticalThrow = Input.GetAxis("Vertical");
         //Debug.Log(verticalThrow);
         float fire1ButtonPushed = Input.GetAxis("Fire1");
         //Debug.Log(fire1ButtonPushed);
         float xOffset = horizontalThrow * controlSpeed;
         float yOffset = verticalThrow * controlSpeed;
+
         float rawXPos = transform.localPosition.x + xOffset;
         float clampedXPos = Mathf.Clamp(rawXPos, -xRange, xRange);
+
         float rawYPos = transform.localPosition.y + yOffset;
         float clampedYPos = Mathf.Clamp(rawYPos, -yRange, yRange);
 
