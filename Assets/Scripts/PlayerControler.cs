@@ -43,6 +43,7 @@ public class PlayerControler : MonoBehaviour
     {
         ProcessTranslation();
         ProcessRotation();
+        ProcessFiring();
 
     }
     void ProcessRotation()
@@ -79,4 +80,22 @@ public class PlayerControler : MonoBehaviour
 
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
     }
+
+    void ProcessFiring()
+    {
+        //if pushing fire button
+        //then print shooting
+        //else DontDestroyOnLoad't print shooting
+
+        if(Input.GetButton("Fire1"))
+        {
+            Debug.Log("Shooting");
+        }
+        else
+        {
+            Debug.Log("not shooting")
+        }
+    }
+
+
 }
