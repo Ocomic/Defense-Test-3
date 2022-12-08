@@ -435,6 +435,9 @@ MonoBehaviour:
   controlSpeed: 0.2
   xRange: 12
   yRange: 10
+  lasers:
+  - {fileID: 1731561780}
+  - {fileID: 1194494931}
   positionPitchFactor: -2
   controlPitchFactor: -35
   positionYawFactor: -1
@@ -877,6 +880,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125730010}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1194494931 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5630088037180891346, guid: a6855501f65edf3448d32c3dcfe2d0fa, type: 3}
+  m_PrefabInstance: {fileID: 1578072402}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1336355402
 GameObject:
   m_ObjectHideFlags: 0
@@ -1264,6 +1272,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 972b4b7d4d0542c4faf5702b3f9f3e27, type: 3}
+--- !u!1 &1731561780 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5630088037180891346, guid: a6855501f65edf3448d32c3dcfe2d0fa, type: 3}
+  m_PrefabInstance: {fileID: 5630088037209615428}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2084274530
 GameObject:
   m_ObjectHideFlags: 0
