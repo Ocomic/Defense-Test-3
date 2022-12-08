@@ -6,17 +6,24 @@ using UnityEngine.InputSystem;
 
 public class PlayerControler : MonoBehaviour
 {
+    [Header("General Setup Settings")]
     //[SerializeField] InputAction movement;
     //[SerializeField] InputAction fire;
 
-    [SerializeField] float controlSpeed = 0.2f;
-    [SerializeField] float xRange = 12f;
-    [SerializeField] float yRange = 10f;
-    [SerializeField] GameObject[] lasers;
-    [SerializeField] float positionPitchFactor = -1f;
-    [SerializeField] float controlPitchFactor = -35f;
-    [SerializeField] float positionYawFactor = -1f;
-    [SerializeField] float controlRollFactor = -30f;
+    [Tooltip("How fast ship moves")][SerializeField] float controlSpeed = 0.2f;
+    [Tooltip("How fast Player moves horizontally")][SerializeField] float xRange = 12f;
+    [Tooltip("How fast Player moves vertically")][SerializeField] float yRange = 10f;
+
+    [Header("Laser Gun Array")]
+    [Tooltip("Add Player Lasers here")][SerializeField] GameObject[] lasers;
+
+    [Header("Screen Position based Tuning")]
+    [Tooltip("Pitch Factor to adjust pitch")][SerializeField] float positionPitchFactor = -1f;
+    [Tooltip("Yaw Factor to adjust yaw")][SerializeField] float positionYawFactor = -1f;
+
+    [Header("Player Input based Tuning")]
+    [Tooltip("Adjust pitch Factor based on Player controls")][SerializeField] float controlPitchFactor = -35f;
+    [Tooltip("Asjust the Roll Factor based on Player Controls")][SerializeField] float controlRollFactor = -30f;
 
     float horizontalThrow;
     float verticalThrow;
