@@ -965,6 +965,7 @@ GameObject:
   - component: {fileID: 5845057284977530262}
   - component: {fileID: 8572927243883766108}
   - component: {fileID: -1367617469383465033}
+  - component: {fileID: 962078503932229173}
   m_Layer: 0
   m_Name: Enemy5
   m_TagString: Untagged
@@ -980,8 +981,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7924606465323188361}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 249.40529, y: 56.2, z: 297.49362}
-  m_LocalScale: {x: 5, y: 5, z: 8}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 8, y: 8, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3022173560370862813}
@@ -1050,11 +1051,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c490ca1ba629ead46b2f7dbdc5f56c84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 4933692209828276158, guid: 1a2610b2e892791468a54d60f0354888, type: 3}
+  deathFX: {fileID: 1757126492399119827, guid: e93ea423eb42f3b41ba4c5d8e1d821a1, type: 3}
   hitVFX: {fileID: 1757126492399119827, guid: f878e89650582ec4cb1837cb55401b67, type: 3}
-  parent: {fileID: 0}
   IncreaseScore: 50
   hitPoints: 8
+--- !u!65 &962078503932229173
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7924606465323188361}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.096986, y: 6.6450253, z: 10.620746}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8456845802167226679
 GameObject:
   m_ObjectHideFlags: 0

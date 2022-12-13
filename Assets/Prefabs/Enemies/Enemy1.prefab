@@ -467,6 +467,7 @@ GameObject:
   - component: {fileID: 1865880927263029144}
   - component: {fileID: 7152132769687178922}
   - component: {fileID: 107815123506518742}
+  - component: {fileID: 6193656706380824600}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Untagged
@@ -553,9 +554,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c490ca1ba629ead46b2f7dbdc5f56c84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 1757126492399119827, guid: e93ea423eb42f3b41ba4c5d8e1d821a1, type: 3}
+  deathFX: {fileID: 1757126492399119827, guid: e93ea423eb42f3b41ba4c5d8e1d821a1, type: 3}
   hitVFX: {fileID: 1757126492399119827, guid: f878e89650582ec4cb1837cb55401b67, type: 3}
-  parent: {fileID: 0}
   IncreaseScore: 10
   hitPoints: 2
 --- !u!95 &7152132769687178922
@@ -579,6 +579,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!65 &107815123506518742
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4897810076071325842}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.859272, y: 2.496461, z: 10.716058}
+  m_Center: {x: 0.00000023841864, y: -0.000001013279, z: 0}
+--- !u!65 &6193656706380824600
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

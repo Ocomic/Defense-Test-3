@@ -1331,6 +1331,7 @@ GameObject:
   - component: {fileID: 9191441439527988931}
   - component: {fileID: 9199520573625584887}
   - component: {fileID: -8893228667146529069}
+  - component: {fileID: -7115141518963458615}
   m_Layer: 0
   m_Name: Enemy4
   m_TagString: Untagged
@@ -1416,8 +1417,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c490ca1ba629ead46b2f7dbdc5f56c84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 4933692209828276158, guid: 1a2610b2e892791468a54d60f0354888, type: 3}
+  deathFX: {fileID: 1757126492399119827, guid: e93ea423eb42f3b41ba4c5d8e1d821a1, type: 3}
   hitVFX: {fileID: 1757126492399119827, guid: f878e89650582ec4cb1837cb55401b67, type: 3}
-  parent: {fileID: 0}
   IncreaseScore: 25
   hitPoints: 5
+--- !u!65 &-7115141518963458615
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9222791025909974947}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.865558, y: 4.241986, z: 11.309124}
+  m_Center: {x: 0.00000047683716, y: -0.000006198883, z: -0.0000011920929}
