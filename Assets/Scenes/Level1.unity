@@ -404,7 +404,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &411921323
 GameObject:
@@ -436,7 +436,7 @@ Transform:
   m_Children:
   - {fileID: 1625551350}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &438059595
 GameObject:
@@ -565,7 +565,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &438059598
 MonoBehaviour:
@@ -640,103 +640,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 13.638825, y: 3.2560537, z: 10.850527}
   m_Center: {x: 0.0000038146973, y: -0.0000007748604, z: -2.3092639e-14}
---- !u!1 &597090115
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 597090119}
-  - component: {fileID: 597090118}
-  - component: {fileID: 597090117}
-  - component: {fileID: 597090116}
-  m_Layer: 0
-  m_Name: Bridge
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &597090116
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 597090115}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &597090117
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 597090115}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &597090118
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 597090115}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &597090119
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 597090115}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 134.65, y: 59.6, z: 480.58347}
-  m_LocalScale: {x: 158.99507, y: 1.5464, z: 22.696447}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &705507994 stripped
 Light:
   m_CorrespondingSourceObject: {fileID: 7082793914004020183, guid: a6c21ea3f459aad4d861e825d8e7294e, type: 3}
@@ -1335,7 +1238,7 @@ TerrainCollider:
   m_Material: {fileID: 0}
   m_Enabled: 1
   m_TerrainData: {fileID: 15600000, guid: 154cff3e6a53ea0458b9a07806b3d4c9, type: 2}
-  m_EnableTreeColliders: 1
+  m_EnableTreeColliders: 0
 --- !u!218 &2084274532
 Terrain:
   m_ObjectHideFlags: 0
@@ -1649,6 +1552,44 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2333297434039223656, guid: f5318fda23765134990f0a29b111ac30, type: 3}
+      propertyPath: m_text
+      value: 'Admiral Greenwick
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2634478749420935236, guid: f5318fda23765134990f0a29b111ac30, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 651bad867c1bb244f82d8a9f95ace913, type: 3}
+    - target: {fileID: 2650358910749300596, guid: f5318fda23765134990f0a29b111ac30, type: 3}
+      propertyPath: m_Name
+      value: Greenwick Image
+      objectReference: {fileID: 0}
+    - target: {fileID: 5777825757416486063, guid: f5318fda23765134990f0a29b111ac30, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 409.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 5777825757416486063, guid: f5318fda23765134990f0a29b111ac30, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -194.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 5777825757416486063, guid: f5318fda23765134990f0a29b111ac30, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 204.534
+      objectReference: {fileID: 0}
+    - target: {fileID: 5855151323819445318, guid: f5318fda23765134990f0a29b111ac30, type: 3}
+      propertyPath: m_Name
+      value: Greenwick Text
+      objectReference: {fileID: 0}
+    - target: {fileID: 6555810074466521936, guid: f5318fda23765134990f0a29b111ac30, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 53
+      objectReference: {fileID: 0}
+    - target: {fileID: 6555810074466521936, guid: f5318fda23765134990f0a29b111ac30, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -171
+      objectReference: {fileID: 0}
     - target: {fileID: 8711522343580802251, guid: f5318fda23765134990f0a29b111ac30, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -1805,7 +1746,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1748448401349459972, guid: 0bf7227364159d940b80998ca198b8c2, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1748448401349459972, guid: 0bf7227364159d940b80998ca198b8c2, type: 3}
       propertyPath: m_LocalPosition.x
